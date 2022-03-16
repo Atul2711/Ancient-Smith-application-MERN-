@@ -3,26 +3,26 @@ import { Container } from '../globalStyle';
 import { Link } from 'react-router-dom';
 
 export const Nav = styled.nav`
-	background: transparent;
-	margin-bottom: -80px;
-	height: 80px;
+	background: #1B1464;
+	margin-bottom: 0px;
+	height: 10vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 1.2rem;
-	position: absolute;
+	position:sticky;
 	top: 0;
 	z-index: 50;
-	width: 100%;
+	width:100%;
 	transition: background-color 0.3s ease-in;
-    margin-left:-5rem;
+    margin-left:0rem;
 `;
 
 export const NavbarContainer = styled(Container)`
 	display: flex;
 	justify-content: start;
 	height: 80px;
-    padding:0 0px;
+    padding:5rem 0px;
    
 	${Container}
 `;
@@ -31,11 +31,11 @@ export const NavLogo = styled(Link)`
 	color: #fff;
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	display: flex;
 	z-index: 50;
-    padding-right:25rem
-    width:50rem;
+	margin-top:-1.2rem;
+	width:15vw;
 `;
 /*
 export const NavIcon = styled.img`
@@ -99,7 +99,7 @@ export const NavLinks = styled.span`
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	padding: 0.5rem 1rem;
+	padding: 0rem 1rem;
 	height: 100%;
 	&:hover {
         font-weight:bolder;

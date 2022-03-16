@@ -49,7 +49,7 @@ function Navbar() {
 				<NavbarContainer>
 					<NavLogo to="/">
 						{/* <NavIcon src="./assets/logo.png" alt="logo" /> */}
-						Smith
+						Ancient Smith
 					</NavLogo>
 					<MobileIcon onClick={handleClick}>
 						{show ? <FaTimes /> : <CgMenuRight />}

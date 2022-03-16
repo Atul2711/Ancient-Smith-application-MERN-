@@ -1,0 +1,66 @@
+
+.Blogcontent{
+   /* border: 2px solid red; */
+   display: flex;
+   flex-direction: column;
+   width: 70vw;
+   margin: auto;
+   /* margin-top: 3rem; */
+   margin-bottom: 3rem;
+   justify-content: center;
+   font-family: 'Baloo Chettan 2', cursive;
+}
+.Blog_Heading{
+   text-align: center;
+   font-size: 2.2rem;
+   margin-bottom: 1rem;
+}
+
+.Blogcontent p{
+   font-size: 1.1rem;
+}
+
+#banner{
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    border: 3px solid black;
+    height: 55vh;
+    background-size: cover;
+    width:100%;
+;
+    
+}  
+
+
+.singlePostEdit {
+    float: right;
+    font-size: 16px;
+  }
+  
+  .singlePostIcon {
+      padding-top: 10px;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+ 
+  
+  .singlePostIcon:first-child {
+    color: rgb(104, 230, 230);
+    
+  }
+  .singlePostIcon:first-child:hover{
+      transition: 1s smooth ease-in;
+      font-size: 1.4rem;
+  }
+  .singlePostIcon:last-child:hover{
+    transition: 1s smooth ease-in;
+    font-size: 1.4rem;
+}
+  .singlePostIcon:last-child {
+    color: rgb(235, 49, 16);
+  }
+  

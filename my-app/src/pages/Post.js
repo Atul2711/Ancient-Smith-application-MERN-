@@ -1,20 +1,19 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SinglePost from '../components/SinglePost';
 
 
-function Profile() {
-  const bg={
-    background:"black"
-  }
+function Post() {
+
   return (
     <div>
-    <Navbar style={bg}/>
-    <h1>Hello viewer</h1>
+    <Navbar />
+    <SinglePost />
     <Footer/>
     </div>
   )
 
 }
 
-export default Profile;
+export default Post;
