@@ -12,12 +12,16 @@ function SinglePost() {
     <div className="Blogcontent">
     <h1 className='Blog_Heading'>
     Firefly
+    </h1>
+    <div>
+    <div className='singlePostAuthor'>
+      <p>Author:Atul Pandit</p>
+    </div>
     <div className="singlePostEdit">
             <i className="singlePostIcon far fa-edit"></i>
             <i className="singlePostIcon far fa-trash-alt"></i>
-          </div>
-    </h1>
-     
+    </div>
+    </div>
 
     <p>
         

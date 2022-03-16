@@ -41,7 +41,6 @@
   }
   
   .singlePostIcon {
-      padding-top: 10px;
     font-size: 1.3rem;
     margin-left: 1rem;
     cursor: pointer;
@@ -62,5 +61,10 @@
 }
   .singlePostIcon:last-child {
     color: rgb(235, 49, 16);
+  }
+
+  .singlePostAuthor{
+    float: left;
+    font-size: 16px;
   }
   

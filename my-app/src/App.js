@@ -8,6 +8,7 @@ import LoginPage from './pages/Login';
 import RegisterPage from './pages/Register'
 import ProfilePage from './pages/Profile';
 import PostPage from './pages/Post'
+import ComposePage from './pages/Compose';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/' exact element={<Home/>}></Route>
         <Route path="/login" exact element={ <LoginPage/> } />
         <Route path="/register" exact element={ <RegisterPage/> } />
+        <Route path="/compose" exact element={ <ComposePage/> } />
         <Route path="/post" exact element={ <PostPage/> } />
       </Routes>
 
