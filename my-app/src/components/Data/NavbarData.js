@@ -14,14 +14,5 @@ export const data=[
         text:"Tutorials",
         id:'tutorial'
     },
-    {
-        to:'/compose',
-        text:"Write",
-        id:'write'
-    },
-    {
-        to:'/register',
-        text:"Register",
-        id:'register'
-    }
+   
 ]

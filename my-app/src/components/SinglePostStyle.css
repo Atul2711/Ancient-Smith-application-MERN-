@@ -22,15 +22,13 @@
 
 #banner{
     display: flex;
-    /* flex-direction: column; */
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border: 3px solid black;
-    height: 55vh;
-    background-size: cover;
     width:100%;
-;
+    max-width: 35vw;
+    height: auto; 
     
 }  
 
@@ -68,3 +66,30 @@
     font-size: 16px;
   }
   
+  .link{
+    text-decoration: none;
+    color: black;
+  }
+
+  
+.singlePostDescInput {
+  border: none;
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.singlePostDescInput:focus {
+  outline: none;
+}
+.singlePostButton {
+  width: 100px;
+  border: none;
+  background-color: teal;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 20px;
+}

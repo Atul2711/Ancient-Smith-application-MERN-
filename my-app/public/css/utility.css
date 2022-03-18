@@ -120,6 +120,10 @@ width:100%;
     list-style: none;
 }
 
+.link{
+    text-decoration: none;
+}
+
 .map{
     text-align: center;
 }

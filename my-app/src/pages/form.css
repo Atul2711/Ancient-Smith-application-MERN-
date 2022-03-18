@@ -86,6 +86,11 @@ input {
     transition: all .5s
 }
 
+#sub_btn:disabled{
+    cursor:not-allowed;
+    background-color:grey;
+}
+
 footer p {
     margin: 0;
     font-size: .9rem
