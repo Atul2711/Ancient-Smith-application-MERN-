@@ -22,6 +22,9 @@
 ## Demo
 
 ### Home Page
+
+![Ancient_SMith_—_Mozilla_Firefox_2022-03-18_13-04-37_Trim_AdobeCreativeCloudExpress](https://user-images.githubusercontent.com/92645706/158957886-f88f240c-b4bf-4965-81f5-816f69a0e673.gif)
+
 ![Screenshot (647)](https://user-images.githubusercontent.com/92645706/158953068-c0e64cb5-fd04-4176-9bf6-9123ac0e3def.png)
 
 ![Screenshot (648)](https://user-images.githubusercontent.com/92645706/158953137-9e355210-f555-459a-9c85-37c512f23589.png)
