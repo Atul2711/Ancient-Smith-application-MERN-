@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+:root{
+   --theme:#7F0909;
+   --theme2:#FFC500;
+    --c1:white;
+    --c2:black;
+    --warning:#f8d7da;
+    --warningFontcolor:#842029;
+    --headingfont:'Shippori Antique B1', sans-serif;
+    --mainfont:'Roboto', sans-serif;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 60vw;
+    margin: auto;
+    /* justify-content: center; */
+}
+.para-heading{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+
+}
+.heading{
+    margin-top: .75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: var(--headingfont);
+    font-weight:600;
+    font-size: 2rem;
+    color: var(--theme);
+}
+.title{
+    font-family: var(--headingfont);
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.img-res{
+    height: auto;
+width:100%;
+}
+.image img{
+    /* display:flex;
+    just; */
+    /* margin-left: 2rem; */
+    width: 50%;
+    height: auto;
+
+}
+.main-container button{
+    background-color: var(--theme);
+    color: var(--theme2);
+    min-width: 10vw;
+    font-weight: bolder;
+}
+
+.main-container button:hover{
+    background-color: var(--theme2);
+    color: var(--theme);
+    /* box-shadow: 10px 10px var(--theme); */
+
+}
+
+.no-td{
+    text-decoration: none;
+    list-style: none;
+}
+
+.Active{
+    background-color: var(--theme2);
+    color: var(--c2);
+}
+
+.Active a{
+    color: var(--c2);
+}
+.Active a:hover{
+    color: var(--c1);
+}
+
+/* .error{
+    background-color: rgb(240, 102, 102);
+    margin-left: 2rem;
+    font-size: 1rem;
+    color:black;
+} */
+
+.warning{
+    /* background-color:var(--warning); */
+    color: var(--warningFontcolor);
+    margin-left: 2.5rem;
+    padding: 0.2rem 1rem;
+    font-weight: 600;
+    /* border-radius:0.2rem; */
+}
+
+.highlight-text{
+    color: var(--theme);
+    font-weight: 600;
+}
+
+.sub-heading{
+    margin-top: .75rem;
+    /* text-align: center; */
+    margin-bottom: 1rem;
+    font-family: var(--headingfont);
+    font-weight:600;
+    font-size: 1.3rem;
+    color: var(--theme);
+    font-style: none;
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.map{
+    text-align: center;
+}
+@media only screen and (max-width: 990px) {
+    html{
+        font-size: 62.5%;
+    }
+  } 
