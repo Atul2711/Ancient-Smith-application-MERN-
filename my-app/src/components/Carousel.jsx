@@ -14,7 +14,7 @@ import {
 
 const Carousel = (props) => {
 	const [sliderRef, setSliderRef] = useState(null);
-	const PF = "http://localhost:5000/images/";
+	const PF = "http://localhost:5000/api/images/";
 	return (
 		<Section margin="auto" maxWidth="1280px" padding="50px 70px" inverse>
 			<Row justify="space-between" margin="1rem" wrap="wrap">

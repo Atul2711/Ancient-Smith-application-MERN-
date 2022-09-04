@@ -14,7 +14,7 @@ function SignUp() {
         e.preventDefault();
         setError(false);
         try{
-            const res=await axios.post("/auth/register",{
+            const res=await axios.post("/api/auth/register",{
                 username,email,password
             });
             res.data && window.location.replace('/login');
