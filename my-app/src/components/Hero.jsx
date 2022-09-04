@@ -6,7 +6,7 @@ import {HeroVideo,HeroSection,HeroText,ButtonWrapper} from './HeroStyles';
 function Hero() {
   return (
     <HeroSection>
-        <HeroVideo src='./assets/Blue.mp4' autoplay loop/>
+        <HeroVideo src='./assets/Blue.mp4' autoplay loop muted/>
         <Container>
         <MainHeading>
             Think Design Build
