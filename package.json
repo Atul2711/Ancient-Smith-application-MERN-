@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "ng build",
     "heroku-postbuild": "cd my-app && npm install && npm run build"
   },
   "author": "Atul Pandit",
