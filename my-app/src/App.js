@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import LoginPage from './pages/Login';
 import RegisterPage from './pages/Register'
 import ProfilePage from './pages/Profile';
-import PostPage from './pages/Post'
+import Post from './pages/Post'
 import ComposePage from './pages/Compose';
 import { Context } from './context/Context';
 
@@ -24,7 +24,7 @@ function App() {
         <Route path="/login" exact element={ user?<Home/>:<LoginPage/> } />
         <Route path='/profile' exact element={user?<ProfilePage/>:<LoginPage/>}></Route>
         <Route path="/compose" exact element={ user?<ComposePage/>: <LoginPage/>} />
-        <Route path="/post/:postId" exact element={ <PostPage/> } />
+        <Route path="/post/:postId" exact element={ <Post/> } />
       </Routes>
 
     </Router>

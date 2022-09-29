@@ -67,7 +67,7 @@ function SinglePost() {
         ) :
    (<h1 className='Blog_Heading'>
     {title}
-    {post.username===user.username && (
+    {post.username===user?.username && (
       <div className="singlePostEdit">
             <i className="singlePostIcon far fa-edit"
             onClick={function(){

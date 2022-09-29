@@ -1,0 +1,11 @@
+html,
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.Animation {
+  width: 100vw;
+  height: 80vh;
+  background-color:#020117;
+}

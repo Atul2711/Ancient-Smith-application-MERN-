@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import Footer from '../components/Footer';
 import axios from "axios";
+import Threedimension from '../components/Threedimension'
+
 import { useLocation } from "react-router";
 
 //Home Page will have navbar,Hero,card(carousel)*3,footer component
@@ -25,6 +27,7 @@ function Home() {
     <div>
     <Navbar />
     <Hero />
+    <Threedimension/>
     <Carousel title="Sculpture" posts={posts} />
      <Carousel title="Projects" posts={posts}  />
     <Carousel title="Tutorials" posts={posts}  /> 

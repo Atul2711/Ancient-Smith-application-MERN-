@@ -5,7 +5,6 @@ import SinglePost from '../components/SinglePost';
 
 
 function Post() {
-
   return (
     <div>
     <Navbar />
