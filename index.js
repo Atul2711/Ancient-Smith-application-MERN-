@@ -40,13 +40,18 @@ app.use('/api/categories',catRoute);
 
 const port = process.env.PORT || 5000;
 
-if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
+/*if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
     app.use(express.static('my-app/build'));
     app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + './my-app/build/index.html'));
     });
    }
+*/
 
+isProduction &&
+  app.get("*", function (request, response) {
+   response.sendFile(path.resolve(__dirname, "./my-app/build", "index.html"));
+  });
 
 app.listen(port,function(){
     console.log("Server is running on port 5000");
