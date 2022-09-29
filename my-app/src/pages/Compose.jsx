@@ -1,5 +1,5 @@
 import "./compose.css";
-import React,{useState,useContext} from 'react'
+import React,{useState,useContext, useEffect} from 'react'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import axios from "axios";
@@ -10,33 +10,62 @@ export default function Write() {
 
   var [title,setTitle]=useState("");
   var [content,setContent]=useState("");
+  const [url, seturl] = useState("");
   var [file,setFile]=useState(null);
   const {user}=useContext(Context);
+
+  useEffect(() => {
+    try{
+    async function upl(){
+      const newPost = {
+        username: user.username,
+        title,
+        content,
+        photo:url
+      };
+      try {
+        const res = await axios.post("/api/posts", newPost);
+        window.location.replace("/post/" + res.data._id);
+      } catch (err) {}
+
+    }
+    upl();
+    }
+    catch(e){
+      console.log("ff");
+    }
+    
+  }, [url])
+  
+
   function handleChange(event){
     setTitle(event.target.value);
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const newPost = {
-      username: user.username,
-      title,
-      content,
-    }; 
+  
     if (file) {
       const data =new FormData();
-      const filename = Date.now() + file.name;
-      data.append("name", filename);
-      data.append("file", file);
-      newPost.photo = filename;
-      try {
-        await axios.post("/api/upload", data);
-      } catch (err) {}
+      data.append('file', file)
+      data.append('upload_preset','a7zbcbwb')
+      try{
+        const res=await fetch("https://api.cloudinary.com/v1_1/dww5gv28l/image/upload",{
+          method:'POST',
+          body:data });
+
+        var f = await res.json();
+        console.log(f.url);
+        seturl(f.url);
+        
+
+      }
+      catch(e){
+        console.log("error");
+      }
+      
     }
-    try {
-      const res = await axios.post("/api/posts", newPost);
-      window.location.replace("/post/" + res.data._id);
-    } catch (err) {}
+
   };
 
   return (

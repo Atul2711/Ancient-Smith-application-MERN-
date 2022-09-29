@@ -32,7 +32,7 @@ const Carousel = (props) => {
 			<ReviewSlider {...sliderSettings} ref={setSliderRef}>
 				{props.posts.map((el, index) => (
 					<ImageWrapper key={index}>
-					{el.photo &&(<CarouselImage src={PF+el.photo} />)}
+					{el.photo &&(<CarouselImage src={el.photo} />)}
 						<TextWrapper size="1.1rem" margin="0.4rem 0 0" weight="bold">
 							{el.title}
 						</TextWrapper>

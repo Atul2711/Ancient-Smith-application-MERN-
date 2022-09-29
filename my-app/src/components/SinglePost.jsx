@@ -15,6 +15,7 @@ function SinglePost() {
  const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
+  const [url, seturl] = useState("");
   const [updateMode, setUpdateMode] = useState(false);
 
   useEffect(() => {
@@ -23,6 +24,7 @@ function SinglePost() {
       setPost(res.data);
       setTitle(res.data.title);
       setDesc(res.data.content);
+      seturl(res.data.photo);
     };
     getPost();
   }, [path]);
@@ -50,8 +52,8 @@ function SinglePost() {
 
   return (
     <div>
-    {post.photo && 
-      ( <img src={PF+post.photo} alt="" id='banner'>
+    {url && 
+      ( <img src={url} alt="" id='banner'>
         </img>)
     }
 
