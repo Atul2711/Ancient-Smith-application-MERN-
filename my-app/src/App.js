@@ -20,10 +20,10 @@ function App() {
       <GlobalStyle />
       <Routes>
         <Route path='/' exact element={<Home/>}></Route>
-        <Route path="/register" exact element={<RegisterPage/>} />
-        <Route path="/login" exact element={ <LoginPage/> } />
-        <Route path='/profile' exact element={<ProfilePage/>}></Route>
-        <Route path="/compose" exact element={<ComposePage/>} />
+        <Route path="/register" exact element={user?<Home/>: <RegisterPage/>} />
+        <Route path="/login" exact element={ user?<Home/>:<LoginPage/> } />
+        <Route path='/profile' exact element={user?<ProfilePage/>:<LoginPage/>}></Route>
+        <Route path="/compose" exact element={ user?<ComposePage/>: <LoginPage/>} />
         <Route path="/post/:postId" exact element={ <Post/> } />
       </Routes>
 
