@@ -42,7 +42,7 @@ const Carousel = (props) => {
 						<TextWrapper size="0.9rem" margin="0.7rem" color="#4f4f4f">
 							{el.content.substr(0,100)}
 						</TextWrapper>
-						<Link to={`/post/${el._id}`} target="_blank">
+						<Link to={"/compose"} target="_blank">
 						<CardButton>Read More</CardButton>
 						</Link>
 					</ImageWrapper>
