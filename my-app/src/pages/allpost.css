@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+	font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --theme:#7F0909;
+    --theme2:#FFC500;
+     --c1:white;
+     --c2:black;
+     --warning:#f8d7da;
+     --warningFontcolor:#842029;
+     --headingfont:'Shippori Antique B1', sans-serif;
+     --mainfont:'Roboto', sans-serif;
+ }
+
+.card{
+    display: flex;
+    flex-direction: column;
+
+    width:50vw;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    align-items: center;
+
+}  
+
+.card p{
+    padding: 0rem 1rem;
+}
