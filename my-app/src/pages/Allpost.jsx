@@ -10,7 +10,7 @@ import { Heading } from '../globalStyle';
 
 
 export default function Allpost() {
-    const PF = "http://localhost:5000/images/";
+    //const PF = "http://localhost:5000/images/";
 const [posts, setPosts] = useState([]);
   const { search } = useLocation();
 
@@ -33,7 +33,7 @@ const [posts, setPosts] = useState([]);
                 
 					<div className='card'>
                     
-					{el.photo &&(<CarouselImage src={PF+el.photo} />)}
+					{el.photo &&(<CarouselImage src={el.photo} />)}
 						<h1>{el.title}</h1>
 						<p>
 							Created at: {new Date(el.createdAt).toDateString()}
@@ -41,7 +41,7 @@ const [posts, setPosts] = useState([]);
 						<p>
 							{el.content.substr(0,100)}
                             </p>
-						<Link to={`/post/${el._id}`} target="_blank">
+						<Link to={`/post/${el._id}`}>
 						<CardButton>Read More</CardButton>
 						</Link>
                 </div>
