@@ -33,7 +33,7 @@ const [posts, setPosts] = useState([]);
                 
 					<div className='card'>
                     
-					{el.photo &&(<CarouselImage src={el.photo} />)}
+					{el.photo ?(<CarouselImage src={el.photo} />):<p>No image </p>}
 						<h1>{el.title}</h1>
 						<p>
 							Created at: {new Date(el.createdAt).toDateString()}
